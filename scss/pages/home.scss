@@ -105,8 +105,8 @@ main.home {
 
     .card {
       width: 48%;
-      height: 200px;
-      box-shadow: 0 10px 10px -5px #dedede;
+      min-height: 200px;
+      
       display: flex;
       margin-bottom: 50px;
       position: relative;
@@ -116,12 +116,16 @@ main.home {
         width: 25%;
         height: 100%;
         padding: 10px;
-        img { height: 200px; margin-top: -30px }
+        img { 
+          height: 200px; 
+          margin-top: -30px; 
+          box-shadow: 0 10px 10px -5px #dedede; 
+        }
       }
 
       .description {
         width: 75%;
-        height: 200px;
+        min-height: 200px;
         padding: 10px 30px;
         h4 { 
           text-transform: uppercase; 

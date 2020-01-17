@@ -9,5 +9,5 @@
 </head>
 <body>
   <header class="main-header">
-    <h1>Tivi<span>M</span>ovi</h1>
+    <h1><a href="<?= get_home_url() ?>">Tivi<span>M</span>ovi</a></h1>
   </header>

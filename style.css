@@ -56,7 +56,8 @@ footer.main-footer {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  margin-top: 30px; }
 
 main.home section {
   margin-bottom: 40px; }
@@ -184,9 +185,7 @@ main.home section.latest .bookmark {
 
 main.home section.latest .card {
   width: 48%;
-  height: 200px;
-  -webkit-box-shadow: 0 10px 10px -5px #dedede;
-          box-shadow: 0 10px 10px -5px #dedede;
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,10 +198,12 @@ main.home section.latest .card {
     padding: 10px; }
     main.home section.latest .card .poster img {
       height: 200px;
-      margin-top: -30px; }
+      margin-top: -30px;
+      -webkit-box-shadow: 0 10px 10px -5px #dedede;
+              box-shadow: 0 10px 10px -5px #dedede; }
   main.home section.latest .card .description {
     width: 75%;
-    height: 200px;
+    min-height: 200px;
     padding: 10px 30px; }
     main.home section.latest .card .description h4 {
       text-transform: uppercase;
@@ -300,3 +301,29 @@ main.home section.news .news-bloc {
     width: 25%; }
   main.home section.news .news-bloc .details {
     width: calc(100% - 25%); } }
+
+main.post-content .featured-image {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover; }
+
+main.post-content .content {
+  background-color: white;
+  margin-bottom: 30px; }
+  main.post-content .content h2 {
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 2rem; }
+  main.post-content .content p {
+    font-size: 0.95rem; }
+    main.post-content .content p::first-letter {
+      color: #ffa200;
+      font-weight: bold;
+      font-size: 1.6rem;
+      margin-left: 15px; }
+
+main.movie header.details img {
+  width: auto;
+  height: 300px; }
